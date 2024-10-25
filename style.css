@@ -1,0 +1,69 @@
+span {
+  font-weight: 900;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  max-width: 1000px;
+  padding: 20px 0;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to left, #ffa500, #ff7e00);
+}
+.block {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+button {
+  padding: 30px;
+  border-radius: 50%;
+  background-color: #ffa500;
+  border-style: none;
+  transition: transform 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+button i {
+  font-size: 40px;
+  color: white;
+}
+button:hover {
+  transform: scale(1.1) rotate(20deg);
+}
+.counter {
+  text-align: right !important;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.you-won {
+  display: none;
+  color: green;
+  font-weight: bold;
+  padding: 10px;
+  background-color: aquamarine;
+  width: 30%;
+}
+.you-lost {
+  display: none;
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  background-color: lightcoral;
+  width: 30%;
+}
