@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROCK PAPER SCISSORS</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="tab">
-        <div class="counter">
-          <p>Computer: <span id="computer_score">0</span></p>
-          <p>Player: <span id="player_score">0</span></p>
-        </div>
-        <div class="choices">
-          <button id="rock">
-            <i class="fa-regular fa-hand-back-fist"></i>
-          </button>
-          <button id="paper"><i class="fa-regular fa-hand"></i></button>
-          <button id="scissors">
-            <i class="fa-regular fa-hand-scissors"></i>
-          </button>
-        </div>
-        <div class="round_info">
-          <p>You chose <span class="you-chose"></span></p>
-          <p>Computer chose <span class="computer-chose"></span></p>
-        </div>
-        <div class="result">
-          <div class="you-won">YOU WON</div>
-          <div class="you-lost">YOU LOST</div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROCK PAPER SCISSORS</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="tab">
+      <div class="counter">
+        <p>Computer:
+        <h3 id="computer_score">0</h3>
+        </p>
+        <p>Player:
+        <h3 id="player_score">0</h3>
+        </p>
+      </div>
+      <div class="choices">
+        <button id="rock">
+          <i class="fa-regular fa-hand-back-fist"></i>
+        </button>
+        <button id="paper"><i class="fa-regular fa-hand"></i></button>
+        <button id="scissors">
+          <i class="fa-regular fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div class="round_info">
+        <p>You chose
+        <h3 class="you-chose"></h3>
+        </p>
+        <p>Computer chose
+        <h3 class="computer-chose"></h3>
+        </p>
+      </div>
+      <div class="result">
+        <div class="you-won">YOU WON</div>
+        <div class="you-lost">YOU LOST</div>
+        <div class="tie">It's A Tie</div>
       </div>
     </div>
-    
-    <script src="script.js"></script>
-  </body>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

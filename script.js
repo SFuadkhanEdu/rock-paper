@@ -7,9 +7,11 @@ const you_chose = document.querySelector(".you-chose");
 const computer_chose = document.querySelector(".computer-chose");
 const you_won = document.querySelector(".you-won");
 const computer_won = document.querySelector(".you-lost");
+const tie = document.querySelector(".tie");
 
-console.log(you_won);
-console.log(computer_won);
+// console.log(you_won);
+// console.log(computer_won);
+console.log(tie);
 
 let player_choice;
 paper.addEventListener("click", function (e) {
@@ -38,26 +40,27 @@ scissors.addEventListener("click", function (e) {
 
 function resetResults() {
   you_won.classList.remove("block");
-  you_won.classList.remove("hidden");
+  // you_won.classList.remove("hidden");
   computer_won.classList.remove("block");
-  computer_won.classList.remove("hidden");
+  // computer_won.classList.remove("hidden");
+  tie.classList.remove("block");
+  // tie.classList.remove("hidden");
 }
 function resulting(player, computer) {
   if (player == computer) {
-    you_chose.textContent = "It's a tie!";
-    computer_chose.textContent = "It's a tie!";
+    tie.classList.toggle("block");
   } else if (
     (player === 2 && computer === 1) ||
     (player === 3 && computer === 2) ||
     (player === 1 && computer === 3)
   ) {
     computer_score.textContent = parseInt(computer_score.textContent) + 1;
-    you_won.classList.toggle("hidden");
+    // you_won.classList.toggle("hidden");
     computer_won.classList.toggle("block");
   } else {
     player_score.textContent = parseInt(player_score.textContent) + 1;
     you_won.classList.toggle("block");
-    computer_won.classList.toggle("hidden");
+    // computer_won.classList.toggle("hidden");
   }
 }
 function randomGenerator() {
